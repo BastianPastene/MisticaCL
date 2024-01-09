@@ -4,6 +4,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { Button, ButtonType } from './Button';
 import { Alert, ScrollView, View } from 'react-native';
 import IconCamera from '../icons/icon-camera';
+import IconoCorazon from '../icons/icono-corazon';
 
 export default {
   title: 'components/Buttons',
@@ -13,6 +14,7 @@ export default {
 export const Basic: ComponentStory<typeof Button> = args => {
   const buttonTypes: Array<ButtonType> = ['primary', 'secondary', 'danger'];
   const onPress = () => Alert.alert('Clicked!', 'Clicked successfully!');
+  
   return (
     <ScrollView>
       <View style={{ gap: 16, margin: 16, width: 143 }}>
@@ -24,22 +26,24 @@ export const Basic: ComponentStory<typeof Button> = args => {
             <Button
               loadingText=""
               type={aButtonType}
-              leftIcon={IconCamera}
+              leftIcon={IconoCorazon({color: 'red', size: 24})}
               onPress={onPress}>
-              Send
+              otro
             </Button>
             <Button
               loadingText=""
               type={aButtonType}
-              rightIcon={IconCamera}
-              onPress={onPress}>
-              Send
+              rightIcon={IconCamera({color: 'blue', size: 24})}
+              onPress={onPress}
+              style={{ color: "red" }}
+            >
+              Se
             </Button>
             <Button loadingText="" type={aButtonType} disabled>
               Send
             </Button>
             <Button loadingText="Sending file" type={aButtonType} showSpinner>
-              Send
+              Sends
             </Button>
             <Button loadingText="" type={aButtonType} showSpinner>
               Send
@@ -51,7 +55,7 @@ export const Basic: ComponentStory<typeof Button> = args => {
               loadingText=""
               type={aButtonType}
               small
-              leftIcon={IconCamera}
+              leftIcon={IconCamera({color: 'blue', size: 24})}
               onPress={onPress}>
               Send
             </Button>
@@ -59,7 +63,7 @@ export const Basic: ComponentStory<typeof Button> = args => {
               loadingText=""
               type={aButtonType}
               small
-              rightIcon={IconCamera}
+              rightIcon={IconCamera({color: 'blue', size: 24})}
               onPress={onPress}>
               Send
             </Button>

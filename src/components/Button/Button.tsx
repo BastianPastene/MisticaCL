@@ -15,8 +15,8 @@ interface CommonProps {
   showSpinner?: boolean;
   loadingText?: string;
   disabled?: boolean;
-  leftIcon?: React.ComponentType<IconProps>;
-  rightIcon?: React.ComponentType<IconProps>;
+  leftIcon?: React.JSX.Element;
+  rightIcon?: React.JSX.Element;
 }
 
 export interface OnPressButtonProps extends CommonProps {
@@ -136,7 +136,7 @@ export const Button = (props: ButtonProps & {type: ButtonType}) => {
             <></>
           )}
           {!props.showSpinner && LeftIcon ? (
-            <LeftIcon color={textColor} size={24} />
+            LeftIcon
           ) : (
             <></>
           )}
@@ -144,7 +144,7 @@ export const Button = (props: ButtonProps & {type: ButtonType}) => {
             {props.showSpinner ? props.loadingText : props.children}
           </Text>
           {!props.showSpinner && RightIcon ? (
-            <RightIcon color={textColor} size={24} />
+            RightIcon
           ) : (
             <></>
           )}

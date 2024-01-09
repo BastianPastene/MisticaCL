@@ -2,6 +2,11 @@
   "name": "MisticaCL",
   "version": "0.0.1",
   "private": true,
+  "types": "src/components/types/index.d.ts",
+  "files": [
+    "src",
+    "src/components/types/*"
+  ],
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",

@@ -1,7 +1,7 @@
 import {MOVISTAR_SKIN} from './constants';
 import {applyAlpha} from '../utils/color';
 
-import type {GetKnownSkin, KnownSkin} from './types';
+// import type {GetKnownSkin, KnownSkin} from './types';
 
 export const palette = {
   movistarBlue: '#019DF4',
@@ -47,8 +47,8 @@ export const palette = {
   darkModeGrey6: '#3C5261',
 };
 
-export const getMovistarSkin: GetKnownSkin = () => {
-  const skin: KnownSkin = {
+export const getMovistarSkin: any = () => {
+  const skin: any = {
     name: MOVISTAR_SKIN,
     colors: {
       background: palette.white,
