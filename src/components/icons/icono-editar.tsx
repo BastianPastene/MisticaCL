@@ -3,9 +3,10 @@ import * as React from 'react';
 import Svg, { Path } from 'react-native-svg';
 import { IconProps } from './type';
 
-function IconoEditar({ color, size }: IconProps) {
+function IconoEditar({ color, size, style }: IconProps) {
     return (
         <Svg
+            style={style}
             width={size}
             height={size}
             fill="none"

@@ -2,9 +2,10 @@ import * as React from 'react';
 import Svg, { Path } from 'react-native-svg';
 import { IconProps } from './type';
 
-function IconoClip({ color, size }: IconProps) {
+function IconoClip({ color, size, style }: IconProps) {
     return (
         <Svg
+            style={style}
             width={size}
             height={size}
             fill="none"

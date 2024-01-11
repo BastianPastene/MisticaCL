@@ -2,9 +2,10 @@ import * as React from 'react';
 import Svg, { Path } from 'react-native-svg';
 import { IconProps } from './type';
 
-function IconoCargandoAndroid({ color, size }: IconProps) {
+function IconoCargandoAndroid({ color, size, style }: IconProps) {
     return (
         <Svg
+            style={style}
             width={size}
             height={size}
             fill="none"

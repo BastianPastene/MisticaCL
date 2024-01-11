@@ -1,4 +1,4 @@
-export const BUTTON_MIN_WIDTH = 104;
+export const BUTTON_MIN_WIDTH = 109;
 const BORDER_PX = 1.5;
 export const ICON_MARGIN_PX = 8;
 export const X_PADDING_PX = 16 - BORDER_PX;

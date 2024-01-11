@@ -267,7 +267,7 @@ export const getMovistarSkin: any = () => {
     borderRadii: {
       avatar: '50%',
       bar: '999px',
-      button: '4px',
+      button: '50px',
       checkbox: '2px',
       container: '8px',
       indicator: '999px',
