@@ -35,7 +35,7 @@ export const Basic: ComponentStory<typeof Iconos> = args => {
         <ScrollView>
             <View style={{ gap: 16, margin: 16 }}>
                 <React.Fragment>
-
+                    <Iconos nombreIcono='IconoAgregar' />
                     <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                         <IconoCerrar color='Black' size={24} style={{ margin: 10 }} />
                         <IconoChevronAbajo color='Black' size={24} style={{ margin: 10 }} />

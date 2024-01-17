@@ -51,10 +51,12 @@ const getStories = () => {
   return {
     "./src/components/Avatar/Avatar.stories.tsx": require("../src/components/Avatar/Avatar.stories.tsx"),
     "./src/components/Badge/Badge.stories.tsx": require("../src/components/Badge/Badge.stories.tsx"),
+    "./src/components/boton/boton.stories.tsx": require("../src/components/boton/boton.stories.tsx"),
     "./src/components/Button/Button.stories.tsx": require("../src/components/Button/Button.stories.tsx"),
     "./src/components/Circle/Circle.stories.tsx": require("../src/components/Circle/Circle.stories.tsx"),
     "./src/components/Divider/Divider.stories.tsx": require("../src/components/Divider/Divider.stories.tsx"),
     "./src/components/HorizontalScroll/Horizontal.stories.tsx": require("../src/components/HorizontalScroll/Horizontal.stories.tsx"),
+    "./src/components/iconos/iconos.stories.tsx": require("../src/components/iconos/iconos.stories.tsx"),
     "./src/components/LoadingBar/LoadingBar.stories.tsx": require("../src/components/LoadingBar/LoadingBar.stories.tsx"),
     "./src/components/Logo/Logo.stories.tsx": require("../src/components/Logo/Logo.stories.tsx"),
     "./src/components/NavBar/NavBar.stories.tsx": require("../src/components/NavBar/NavBar.stories.tsx"),

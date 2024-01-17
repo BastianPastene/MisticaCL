@@ -1,7 +1,10 @@
 import {TELEFONICA_SKIN} from './constants';
 import {applyAlpha} from '../utils/color';
 
-import type {GetKnownSkin, KnownSkin} from './types';
+// import type {GetKnownSkin, KnownSkin} from './types';
+
+
+
 
 export const palette = {
   telefonicaBlue: '#0066FF',
@@ -41,8 +44,9 @@ export const palette = {
   darkModeGrey6: '#313235',
 };
 
-export const getTelefonicaSkin: GetKnownSkin = () => {
-  const skin: KnownSkin = {
+export const getTelefonicaSkin = () => {
+
+  const skin = {
     name: TELEFONICA_SKIN,
     colors: {
       appBarBackground: palette.white,
