@@ -5,3 +5,7 @@ export const isAndroid = (): boolean => Platform.OS === 'android';
 export const isIos = (): boolean => Platform.OS === 'ios';
 
 export const isWeb = (): boolean => Platform.OS === 'web';
+
+export {ThemeContextProvider} from '../hooks/ThemeContextProvider';
+
+export { Button } from '../components/Button/Button';

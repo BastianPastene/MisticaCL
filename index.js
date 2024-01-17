@@ -9,7 +9,7 @@ import { ThemeContextProvider } from './src/hooks/ThemeContextProvider';
 
 
 const AppContext = () => {
-    return <ThemeContextProvider skinName='Movistar-AR'>
+    return <ThemeContextProvider skinName='Telefonica'>
         <StatusBar/>
         <App />
     </ThemeContextProvider>

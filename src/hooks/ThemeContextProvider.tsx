@@ -1,15 +1,15 @@
 import {createContext, useContext} from 'react';
 import {getSkinByName} from '../components/skins/utils';
-// import {KnownSkinName, Skin} from '../components/skins/types';
+import {KnownSkinName, Skin} from '../components/skins/types';
 
 type ThemeContext = {
-  skinName: any;
-  skin: any;
+  skinName: KnownSkinName;
+  skin: Skin;
 };
 
 const ThemeContext = createContext<ThemeContext>({
-  skinName: 'Movistar',
-  skin: getSkinByName('AppMiMovistar'),
+  skinName: 'Telefonica',
+  skin: getSkinByName('Telefonica'),
 });
 
 export function ThemeContextProvider(props: any) {
