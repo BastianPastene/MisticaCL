@@ -2,11 +2,7 @@
   "name": "MisticaCL",
   "version": "0.0.1",
   "private": true,
-  "types": "src/components/types/index.d.ts",
-  "files": [
-    "src",
-    "src/components/types/*"
-  ],
+  "main": "src/utils/index.ts",
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
@@ -20,7 +16,6 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@react-native-async-storage/async-storage": "^1.17.3",
     "@react-native-community/datetimepicker": "^6.7.1",
     "@react-native-community/slider": "^4.3.3",
     "react": "18.2.0",
