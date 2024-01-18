@@ -1,4 +1,4 @@
-import { tokenfigma } from '../utils/tokenfigma';
+import { tokenfigma } from '../../hooks/tokenfigma';
 import {TELEFONICA_SKIN,} from './constants';
 import {getTelefonicaSkin} from './telefonica';
 import type {SkinVariant, KnownSkin, KnownSkinName} from './types';
