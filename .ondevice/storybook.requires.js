@@ -55,11 +55,13 @@ const getStories = () => {
     "./src/components/Circle/Circle.stories.tsx": require("../src/components/Circle/Circle.stories.tsx"),
     "./src/components/Divider/Divider.stories.tsx": require("../src/components/Divider/Divider.stories.tsx"),
     "./src/components/HorizontalScroll/Horizontal.stories.tsx": require("../src/components/HorizontalScroll/Horizontal.stories.tsx"),
+    "./src/components/Lists/List.stories.tsx": require("../src/components/Lists/List.stories.tsx"),
     "./src/components/LoadingBar/LoadingBar.stories.tsx": require("../src/components/LoadingBar/LoadingBar.stories.tsx"),
     "./src/components/Logo/Logo.stories.tsx": require("../src/components/Logo/Logo.stories.tsx"),
     "./src/components/NavBar/NavBar.stories.tsx": require("../src/components/NavBar/NavBar.stories.tsx"),
     "./src/components/Placerholder/Placeholder.stories.tsx": require("../src/components/Placerholder/Placeholder.stories.tsx"),
     "./src/components/ProgressBar/ProgressBar.stories.tsx": require("../src/components/ProgressBar/ProgressBar.stories.tsx"),
+    "./src/components/RadioButtons/RadioButton.stories.tsx": require("../src/components/RadioButtons/RadioButton.stories.tsx"),
     "./src/components/Sheet/Sheet.stories.tsx": require("../src/components/Sheet/Sheet.stories.tsx"),
     "./src/components/Skeletons/SkeletonCircle.stories.tsx": require("../src/components/Skeletons/SkeletonCircle.stories.tsx"),
     "./src/components/Skeletons/SkeletonLine.stories.tsx": require("../src/components/Skeletons/SkeletonLine.stories.tsx"),
@@ -71,6 +73,7 @@ const getStories = () => {
     "./src/components/Tag/Tag.stories.tsx": require("../src/components/Tag/Tag.stories.tsx"),
     "./src/components/Text/Text.stories.tsx": require("../src/components/Text/Text.stories.tsx"),
     "./src/components/Title/Title.stories.tsx": require("../src/components/Title/Title.stories.tsx"),
+    "./src/components/Toggle/Toggle.stories.tsx": require("../src/components/Toggle/Toggle.stories.tsx"),
     "./src/components/Welcome/Welcome.stories.tsx": require("../src/components/Welcome/Welcome.stories.tsx"),
   };
 };
