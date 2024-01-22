@@ -1,61 +1,48 @@
 import React from 'react'
 import { View } from 'react-native'
 
-import iconosJson from '../icons/iconos-json/iconos.json'
-import dataIconos from '../icons/iconos-json/dataIconos.json'
 import { IconProps } from '../icons/type';
 import Svg, { Path } from 'react-native-svg';
-import { IconosDefault } from '../icons/iconosDefault';
+
+import { iconosData } from '../icons/iconos-json/iconosData';
+import { nombresIconos } from '../icons/iconos-json/nombresIconos';
 
 
-type tipado = keyof typeof dataIconos
+type tipadoIconos = keyof typeof nombresIconos
 
-export interface iconosProps extends IconProps {
-  nombreIcono: tipado
+export interface IconosProps extends IconProps {
+  nombreIcono: tipadoIconos
 };
 
 
-export const Iconos = ({ color, size, style, nombreIcono }: iconosProps) => {
+export const Iconos = ({ color, size, style, nombreIcono }: IconosProps) => {
 
-  const iconos: [] = [];
-  iconos.push(dataIconos as never);
-  // console.log(iconos)
+  const iconosDatos = iconosData ;
 
-  let svgCodigo = '';
-  // console.log(nombreIcono)
-  const nombresIconos : string[] = []
-  iconos.forEach(element => {
-    console.log("elementos: ", element)
-      if (element) {
-          nombresIconos.push(element);
-      }
+  let svg: string = '';
 
-      nombresIconos.forEach(element => {
-        // console.log("elementosssss: ", element.IconoAgregar)
+  iconosDatos.iconos.forEach(icono => {
 
-      });
-
-  });
-
-  console.log("nombres: ", nombresIconos)
-
-  nombresIconos.forEach(element => {
-    
+    if(icono.nombreIcono === nombreIcono) {
+      svg = icono.d
+    }
   });
 
   return (
     <View >
-      {/* <IconosDefault nombreIcono={nombreIcono}/> */}
         <Svg
             style={style}
             width={size}
             height={size}
             fill="none"
             viewBox="0 0 24 24"
-            preserveAspectRatio="xMinYMin slice">
+            preserveAspectRatio="xMinYMin slice"
+            >
             <Path
                 fill={color}
-                d=""
+                fillRule="evenodd" 
+                clipRule="evenodd"
+                d={svg}
             />
         </Svg>      
     </View>

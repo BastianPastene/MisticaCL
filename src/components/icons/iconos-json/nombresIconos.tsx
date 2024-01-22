@@ -1,0 +1,22 @@
+export const nombresIconos = {
+    "Cerrar": "Cerrar",
+    "ChevronAbajo": "ChevronAbajo",
+    "ChevronArriba": "ChevronArriba",
+    "FlechaIzquierda": "FlechaIzquierda",
+    "FlechaDerecha": "FelchaDerecha",
+    "Editar": "Editar",
+    "CargandoDefault": "CargandoDefault",
+    "CargandoAndroid": "CargandoAndroid",
+    "CargandoIos": "CargandoIos",
+    "Whatsapp": "Whatsapp",
+    "Descargar": "Descargar",
+    "Buscar": "Buscar",
+    "Basurero": "Basurero",
+    "Clip": "Clip",
+    "CerrarCirculo": "CerrarCirculo",
+    "CarritoCompra": "CarritoCompra",
+    "Movistar": "Movistar",
+    "Agregar": "Agregar",
+    "CorazonLineal": "CorazonLineal",
+    "Corazon": "Corazon"
+}
